@@ -1,0 +1,338 @@
+# Topic 1: Variables and Variable Naming
+
+## Question 1
+
+```python
+name = "Raju"
+print("Name:", name)
+```
+Answer: name="Raju"
+print("name:",name)
+
+## Question 2
+
+```python
+student_name = "Aman"
+print("Student Name:", Student_name)
+```
+Answer:student_name = "Aman"
+print("student name:", student_name)
+
+## Question 3
+
+```python
+student name = "Rahul"
+print("Student Name:", student name)
+```
+Answer:student_name = "Rahul"
+print("student_name:", student_name)
+
+## Question 4
+
+```python
+1student_name = "Ravi"
+print("Student Name:", 1student_name)
+```
+Answer: student_name1 = "Ravi"
+print("student_name1:", student_name1)
+
+## Question 5
+
+```python
+student-name = "Rohan"
+print("Student Name:", student-name)
+```
+Answer: student_name = "Rohan"
+print("student_name:", student_name)
+
+## Question 6
+
+```python
+student_name = "Neha"
+student_age = 19
+
+print("Name:", student_name)
+print("Age:", student_age)
+```
+Answer: student_name = "Neha"
+student_age = 19
+
+print("Name:", student_name)
+print("Age:", student_age)
+
+## Question 7
+
+```python
+Student_Name = "Karan"
+student_name = "Raj"
+
+print("Student 1:", Student_Name)
+print("Student 2:", student_name)
+```
+Answer:student_name1 = "Karan"
+student_name2 = "Raj"
+
+print("Student 1:", student_name1)
+print("Student 2:", student_name2)
+
+## Question 8
+
+```python
+student_name = "Priya"
+student age = 19
+
+print("Name:", student_name)
+print("Age:", student_age)
+```
+Answer:student_name = "Priya"
+student_age = 19
+
+print("Name:", student_name)
+print("Age:", student_age)
+
+## Question 9
+
+```python
+2name = "Amit"
+student_age = 18
+
+print("Name:", 2name)
+print("Age:", student_age)
+```
+Answer:name2 = "Amit"
+student_age = 18
+
+print("Name:", name2)
+print("Age:", student_age)
+
+## Question 10
+
+```python
+college_name = "ABC College"
+student_name = "Meera"
+
+print("College:", college_name)
+print("Student:", studentName)
+```
+Answer:college_name = "ABC College"
+student_name = "Meera"
+
+print("College:", college_name)
+print("Student:", student_name)
+
+## Question 11
+
+```python
+first_name = "Raj"
+last_name = "Patel"
+
+print("Full Name:", first_name, last_name)
+```
+Answer:first_name = "Raj"
+last_name = "Patel"
+
+print("Full Name:", first_name, last_name)
+
+## Question 12
+
+```python
+first name = "Raj"
+last_name = "Patel"
+
+print("Full Name:", first_name, last_name)
+```
+Answer:first_name = "Raj"
+last_name = "Patel"
+
+print("Full Name:", first_name, last_name)
+
+---
+
+# Topic 2: print()
+
+## Instructions
+
+For each question:
+
+1. Create a separate variable for each given detail.
+2. Store the given value in the appropriate variable.
+3. Use suitable data types for the values.
+4. Use meaningful variable names.
+5. Use `print()` to display the information in a meaningful sentence.
+6. Do not directly write the given values inside `print()`.
+
+## Question 13 — Student Introduction
+
+Create variables for the student's name, age, course, and city.
+
+### Given Details
+
+- Name: Rahul Raj
+- Age: 18
+- Course: B.Tech
+- City: Patna
+
+### Expected Output
+
+```text
+My name is Rahul Raj. I am 18 years old. I am studying B.Tech and I live in Patna.
+```
+Answer: name="Rahul Raj"
+age=18
+course="B.tech"
+city="Patna"
+print("My name is",name+".","I am",age,"years old. I am studing",course,"and i live in",city+".")
+
+## Question 14 — Student Details
+
+Create variables for the student's name, roll number, branch, and semester.
+
+### Given Details
+
+- Name: Aman Kumar
+- Roll Number: 101
+- Branch: Computer Science
+- Semester: 1
+
+### Expected Output
+
+```text
+My name is Aman Kumar. My roll number is 101. I am studying Computer Science in semester 1.
+```
+Answer: student_name="Aman Kumar"
+roll_number=101
+branch="Computer Science"
+semester=1
+print("My name is",student_name+".","My roll number is",roll_number,".","I am studying",branch,"in semester",semester)
+
+## Question 15 — Personal Information
+
+Create variables for name, age, gender, and city.
+
+### Given Details
+
+- Name: Priya Sharma
+- Age: 19
+- Gender: Female
+- City: Jaipur
+
+### Expected Output
+
+```text
+My name is Priya Sharma. I am 19 years old. I am Female and I live in Jaipur.
+```
+Answer: name="Priya Sharma"
+age=19
+gender="Female"
+city="Jaipur"
+print("My name is",name+".","I am",age,"years old. I am",gender,"I live in",city)
+
+## Question 16 — Mobile Details
+
+Create variables for mobile brand, model, RAM, and storage.
+
+### Given Details
+
+- Brand: Samsung
+- Model: Galaxy A55
+- RAM: 8 GB
+- Storage: 256 GB
+
+### Expected Output
+
+```text
+I have a Samsung Galaxy A55 with 8 GB RAM and 256 GB storage.
+```
+Answer:mobile_brand="Samsung"
+model="Galaxy A55"
+RAM=8
+storage=256
+print("I have a",brand,model,"with",RAM,"GB RAM and",storage,"GB storage")
+
+## Question 17 — Employee Introduction
+
+Create variables for employee name, job role, company, and experience.
+
+### Given Details
+
+- Name: Rohit Kumar
+- Job Role: Software Developer
+- Company: ABC Technologies
+- Experience: 2 years
+
+### Expected Output
+
+```text
+My name is Rohit Kumar. I work as a Software Developer at ABC Technologies and I have 2 years of experience.
+```
+Answer: employee_name="Rohit Kumar"
+job_role="Software Developer"
+company="ABC technologies"
+experience=2
+print("My name is",employee_name+"."," I work as a",job_role,"at",company,"and I have",experience,"years of experience.")
+
+## Question 18 — College Information
+
+Create variables for college name, course, branch, and city.
+
+### Given Details
+
+- College: XYZ Institute of Technology
+- Course: B.Tech
+- Branch: Information Technology
+- City: Ahmedabad
+
+### Expected Output
+
+```text
+I am studying B.Tech in Information Technology at XYZ Institute of Technology in Ahmedabad.
+```
+Answer: collage_name="XYZ Institute of Technology"
+course="B.Tech"
+branch="Information Technology"
+city="Ahmedabad"
+print("I am studying",course,"in",branch,"at",collage_name,"in",city)
+
+## Question 19 — Product Information
+
+Create variables for product name, price, brand, and quantity.
+
+### Given Details
+
+- Product: Laptop
+- Brand: HP
+- Price: 55000
+- Quantity: 1
+
+### Expected Output
+
+```text
+I bought 1 HP Laptop for 55000 rupees.
+```
+Answer: product_name="Laptop"
+brand="HP"
+price=55000
+quantity=1
+print("I brought",)
+
+## Question 20 — Family Details
+
+Create variables for your name, father's name, mother's name, and city.
+
+### Given Details
+
+- Name: Rahul Raj
+- Father's Name: Rajesh Kumar
+- Mother's Name: Sunita Kumar
+- City: Patna
+
+### Expected Output
+
+```text
+My name is Rahul Raj. My father's name is Rajesh Kumar. My mother's name is Sunita Kumar. I live in Patna.
+```
+ANSWER:  name="Rahul Raj"
+father_name="Rajesh Kumar"
+mother_name="Sunita Kumar"
+city="Patna"
+print("My name is",name+".","My father name is",father_name+".","My mother name is",mother_name+".","I live in",city)
