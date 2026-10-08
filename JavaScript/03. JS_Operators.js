@@ -443,3 +443,94 @@ ANSWERS=================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
    Question -1
 
+// 1. Find the volume of a cube with a side length of 6 cm using side ** 3.
+
+let side1 = 6;
+let volume = side1 ** 3;
+console.log(volume);
+// Answer: 216
+
+
+// 2. Calculate the total number of cells in a square arrangement with 9 cells on each side using side ** 2.
+
+let side2 = 9;
+let cells = side2 ** 2;
+console.log(cells);
+// Answer: 81
+
+
+// 3. Find the value of 5^4 using the exponentiation operator.
+
+let result3 = 5 ** 4;
+console.log(result3);
+// Answer: 625
+
+
+// 4. A digital image has 1,024 pixels on each side. Find the total number of pixels using pixels ** 2.
+
+let pixels = 1024;
+let totalPixels = pixels ** 2;
+console.log(totalPixels);
+// Answer: 1048576
+
+
+// 5. Predict the output.
+
+let base = 2;
+let power = -1;
+let result5 = base ** power;
+console.log(result5);
+// Answer: 0.5
+
+
+// 6. What is the output of 3 ** 4?
+
+console.log(3 ** 4);
+// Answer: 81
+
+
+// 7. Calculate the area of a square whose side is 9 units.
+
+let side7 = 9;
+let area = side7 ** 2;
+console.log(area);
+// Answer: 81
+
+
+// 8. What is the result of 2 ** 5 and 5 ** 2? Are they the same?
+
+console.log(2 ** 5);
+console.log(5 ** 2);
+// Answer:
+// 32
+// 25
+// They are not the same.
+
+
+// 9. Predict and explain the outputs.
+
+console.log(2 ** 3 ** 2);
+console.log((2 ** 3) ** 2);
+console.log(2 ** -3);
+// console.log(-2 ** 2);  // SyntaxError
+console.log((-2) ** 2);
+console.log(4 ** 0.5);
+
+// Answer:
+// 512
+// 64
+// 0.125
+// SyntaxError
+// 4
+// 2
+
+
+// 10. Predict the output.
+
+let a = 10;
+let b = 0;
+let result10 = a ** b;
+console.log(result10);
+// Answer: 1
+
+
