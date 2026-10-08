@@ -1070,5 +1070,5 @@ else:
 age = 20
 has_id = True
 
-if age >= 18:
+
    
