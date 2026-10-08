@@ -366,3 +366,80 @@ console.log("abc" / 5);       // NaN
 
 ANSWERS===========>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+// Question 1
+console.log(53 % 5); // 3 students left
+
+// Question 2
+console.log(128 % 10); // 8 candies left
+
+// Question 3
+console.log(237 % 6); // 3 toys left
+
+// Question 4
+console.log(185 % 40); // 25 people left
+
+// Question 5
+let a = 10;
+let b = 0;
+let result = a % b;
+console.log(result); // NaN
+
+// Question 6
+console.log(29 % 5); // 4
+
+// Question 7
+console.log(23 % 4); // 3 chocolates left
+
+// Question 8
+console.log(0 % 7);  // 0
+console.log(15 % 0); // NaN
+
+// Question 9
+console.log(Math.floor(47 / 6)); // 7 full sheets
+console.log(47 % 6);             // 5 pages left
+
+// Question 10
+console.log(17 % 5);    // 2
+console.log(-17 % 5);   // -2
+console.log(17 % -5);   // 2
+console.log(-17 % -5);  // -2
+console.log(10 % 0);    // NaN
+
+### 6. Exponentiation `**`
+
+1. Find the volume of a cube with a side length of 6 cm using `side ** 3`.  
+2. Calculate the total number of cells in a square arrangement with 9 cells on each side using `side ** 2`.  
+3. Find the value of \( 5^4 \) (5 raised to the power 4) using the exponentiation operator.  
+4. A digital image has 1,024 pixels on each side (square image). Find the total number of pixels using `pixels ** 2`.  
+5. Predict the output:
+   ```js
+   let base = 2;
+   let power = -1;
+   let result = base ** power;
+   console.log(result);
+   ```
+6. What is the output of `3 ** 4`?  
+7. Calculate the area of a square whose side is 9 units using the exponentiation operator.  
+8. What is the result of `2 ** 5` and `5 ** 2`? Are they the same?  
+9. Predict and explain the outputs (and any errors):  
+   ```js
+   console.log(2 ** 3 ** 2);          // right-associative
+   console.log((2 ** 3) ** 2);
+   console.log(2 ** -3);
+   // console.log(-2 ** 2);           // Remember: Syntax error
+   console.log((-2) ** 2);
+   console.log(4 ** 0.5);
+   ```
+10. Predict the output:
+    ```js
+    let a = 10;
+    let b = 0;
+    let result = a ** b;
+    console.log(result);
+    ```
+
+
+ANSWERS=================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+   Question -1
+
