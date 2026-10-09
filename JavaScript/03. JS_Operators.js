@@ -533,4 +533,416 @@ let result10 = a ** b;
 console.log(result10);
 // Answer: 1
 
+## B] Assignment Operators
 
+### 1. Simple Assignment `=`
+1. Store a student’s name as `"Priya"` and marks as `92` using the assignment operator.  
+2. Create a variable `score` and assign it the value `0`.  
+3. Assign the value `50` to three variables `a`, `b` and `c` using a single chained assignment.  
+4. Predict the output:
+   ```js
+   let x;
+   x = 100;
+   console.log(x);
+   ```
+5. Predict the output:
+   ```js
+   let p = 15;
+   let q = p;
+   q = 30;
+   console.log(p, q);
+   ```
+
+---
+// #Question -1
+// let name="priya"
+// let marks=90
+// console.log(name)
+// console.log(marks)
+
+// #question -2
+// let score=0
+// console.log(score)
+
+// # question-3
+
+// let a=b=c=50;
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+// # question 4
+// 100
+
+// # question 5
+
+// 15 30
+
+
+   ### 2. Add and Assign `+=`
+1. A player’s score is `80`. He scores `25` more points. Update the score using `+=`.  
+2. A wallet has ₹1500. Cashback of ₹120 is added. Update the balance using `+=`.  
+3. Predict the output:
+   ```js
+   let count = 10;
+   count += 5;
+   console.log(count);
+   ```
+4. Predict the output:
+   ```js
+   let msg = "Good";
+   msg += " Morning";
+   console.log(msg);
+   ```
+5. What is the final value after `let n = 20; n += "5";`? Explain.
+
+---
+// question-1
+
+// let score=80;
+// score+=25;
+// console.log(score)
+
+// Question -2 
+
+// let walletBalance=1500
+// walletBalance+=120;
+// console.log(walletBalance)
+
+// # question- 3
+
+// 15
+
+// Question -4
+
+// Good Morning
+
+// Question -5
+
+// output will be 25
+
+// js convert "5" into number and then they will addEventListener
+
+### 3. Subtract and Assign `-=`
+1. Health is `100`. Player takes `35` damage. Update health using `-=`.  
+2. Stock of 300 items is reduced by 45 after a sale. Update using `-=`.  
+3. Predict the output:
+   ```js
+   let lives = 5;
+   lives -= 2;
+   console.log(lives);
+   ```
+4. Predict the output:
+   ```js
+   let num = "40";
+   num -= 15;
+   console.log(num);
+   ```
+5. What is the result of `let x = "abc"; x -= 5;`? Explain.
+
+---
+
+// [3.] SUbtract and assign
+
+// Question -1
+
+// let health=100
+// health-=35
+// console.log(health)
+
+// Question -2
+
+// let stockValue=300
+// stockValue-=45
+// console.log(stockValue)
+
+// Question -3
+
+// 3
+// Questin-4
+
+// 25
+
+// Question-5
+
+// output will be NaN , as "abc" is not a number 
+
+### 4. Multiply and Assign `*=`
+1. Price of an item is ₹500. Apply 18% GST using `*= 1.18`.  
+2. A quantity of 8 is tripled. Update using `*=`.  
+3. Predict the output:
+   ```js
+   let amount = 200;
+   amount *= 1.1;
+   console.log(amount);
+   ```
+4. Predict the output:
+   ```js
+   let val = "7";
+   val *= 3;
+   console.log(val);
+   ```
+5. What is the result of `let y = "hello"; y *= 2;`? Explain.
+
+---
+// [4.] Multiply and assign
+
+// Question-1
+
+// let price=500;
+// price*=1.18;
+// console.log(price)
+
+// # question -2 
+
+// let quantity=8;
+// quantity*=3;
+// console.log(quantity)
+
+// Questipon-3
+//  220
+
+// Question -4
+// 21
+// Question -5
+// NaN, as "abc" is not a number so we can't multiply 
+
+### 5. Divide and Assign `/=`
+1. Total of 180 chocolates is shared among 6 children. Update using `/=`.  
+2. Distance of 300 km is covered in 5 hours. Find average speed using `/=`.  
+3. Predict the output:
+   ```js
+   let total = 400;
+   total /= 8;
+   console.log(total);
+   ```
+4. Predict the output:
+   ```js
+   let num = "100";
+   num /= 4;
+   console.log(num);
+   ```
+5. What is the result of `let z = 50; z /= 0;`? Explain.
+
+---
+ // [5.] Divide and assign
+
+// # question -1
+
+// let chocolates=180;
+// chocolates/=8;
+// console.log(chocolates)
+
+// Question-2
+
+// let speed=300;
+// speed/=5;
+// console.log(speed)
+
+// Question -3
+
+// 50
+
+// // Question -4
+// 25
+
+// // question -5
+//  it will give infinity as any +ve no. when divided by 0 gives infinity
+
+### 7. Exponentiation and Assign `**=`
+1. Side of a cube is 5. Update it to get the volume using `**= 3`.  
+2. Number 4 needs to be squared. Use `**= 2`.  
+3. Predict the output:
+   ```js
+   let base = 2;
+   base **= 5;
+   console.log(base);
+   ```
+4. Predict the output:
+   ```js
+   let n = 4;
+   n **= 0.5;
+   console.log(n);
+   ```
+5. What is the result of `let p = 2; p **= -1;`? Explain.
+
+---
+[7.] Exponentitation and assign
+
+// Question-1
+
+// let sideOfCube=5;
+// sideOfCube**=3;
+// console.log(sideOfCube)
+
+// Question -2 
+// let num=4
+// num**=2
+// console.log(num)
+
+// Question -3
+// 128
+
+// Question -4
+// 2
+// Question -5
+0.5 , power -1 means 1/2=0.5
+
+## C] Comparison Operators
+
+### 1. Loose Equality `==`
+1. Check whether the string `"25"` is loosely equal to the number `25`.  
+2. Check if `0 == false` returns true or false.  
+3. Predict the output:
+   ```js
+   console.log(10 == "10");
+   console.log(null == undefined);
+   ```
+4. Predict the output:
+   ```js
+   console.log("" == 0);
+   console.log([] == false);
+   ```
+5. Why does `NaN == NaN` return `false`?
+
+// C] Comparison Operators
+
+// q1.
+console.log("25" == 25); // true
+
+// q2. 
+console.log(0 == false); // true
+
+// q3. 
+console.log(10 == "10");        // true
+console.log(null == undefined); // true
+
+// qy4. 
+console.log("" == 0);     // true
+console.log([] == false); // true
+
+//qu 5. 
+console.log(NaN == NaN); // false
+// NaN is not equal to any value, including itself.
+
+### 2. Loose Inequality `!=`
+1. Check whether `"18" != 18` returns true or false.  
+2. A password is stored as `"1234"`. User enters `1234` (number). Will `!=` return true?  
+3. Predict the output:
+   ```js
+   console.log(5 != "5");
+   console.log(0 != false);
+   ```
+4. Predict the output:
+   ```js
+   console.log(null != undefined);
+   console.log("" != 0);
+   ```
+5. What does `NaN != NaN` return? Explain.
+
+---
+
+
+// C] Comparison Operators
+// 2. Loose Inequality (!=)
+
+//q 1.
+console.log("18" != 18); // false
+
+// q2. 
+let password = "1234";
+let enteredPassword = 1234;
+console.log(password != enteredPassword); // false
+
+//q 3.
+console.log(5 != "5");  // false
+console.log(0 != false); // false
+
+// q4.
+console.log(null != undefined); // false
+console.log("" != 0);           // false
+
+// q5. 
+console.log(NaN != NaN); ===... true
+// NaN is not equal to any value, including itself.
+
+### 3. Strict Equality `===`
+1. Check whether `"25" === 25` returns true or false. Explain why.  
+2. Check if `0 === false` and `null === undefined`.  
+3. Predict the output:
+   ```js
+   console.log(10 === "10");
+   console.log(true === 1);
+   ```
+4. Predict the output:
+   ```js
+   console.log("" === 0);
+   console.log([] === false);
+   ```
+5. Why is `===` preferred over `==` in most real-world code?
+
+---
+
+// C] Comparison Operators
+// // 3. Strict Equality (===)
+
+// // 1. Check whether "25" === 25
+// console.log("25" === 25); // false
+// // Explanation: The values have different data types (string and number).
+
+// // 2. Check if 0 === false and null === undefined
+// console.log(0 === false);          // false
+// console.log(null === undefined);   // false
+
+// // 3. Predict the output
+// console.log(10 === "10"); // false
+// console.log(true === 1);  // false
+
+// // 4. Predict the output
+// console.log("" === 0);     // false
+// console.log([] === false); // false
+
+// 5. Why is === preferred over ==?
+// === checks both value and data type without type conversion.
+// It helps avoid unexpected results and makes code more predictable.
+
+
+### 4. Strict Inequality `!==`
+1. Check whether `"18" !== 18` returns true or false.  
+2. Check if `0 !== false` and `null !== undefined`.  
+3. Predict the output:
+   ```js
+   console.log(5 !== "5");
+   console.log(true !== 1);
+   ```
+4. Predict the output:
+   ```js
+   console.log("" !== 0);
+   console.log(NaN !== NaN);
+   ```
+5. Write a condition that checks if a variable `input` is strictly not equal to the string `"0"`.
+
+Answer==>>
+Q-1
+   console.log("18" !== 18); 
+
+q-2
+
+console.log(0 !== false);     true    
+console.log(null !== undefined); true
+
+
+Q-3
+
+true ,true
+Q-4
+
+true
+true
+Q-5
+
+
+
+
+
+   
