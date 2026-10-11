@@ -943,6 +943,318 @@ Q-5
 
 
 
+## Part C] Relational Operator
 
+### 5. Greater Than `>`
+1. A student’s marks are 78. The passing marks are 40. Check whether the student has scored more than the passing marks.  
+2. Temperature today is 35°C and yesterday it was 28°C. Check if today is hotter.  
+3. Predict the output:
+   ```js
+   console.log(15 > 10);
+   console.log(10 > 15);
+   console.log(10 > 10);
+   ```
+4. Predict the output:
+   ```js
+   console.log("20" > 15);
+   console.log("5" > "10");
+   console.log("abc" > 10);
+   ```
+5. What is the result of `null > 0` and `undefined > 0`? Explain.  
+6. A shop has 120 items in stock. A customer wants to buy 85 items. Write a condition using `>` to check if stock is sufficient.  
+7. Predict and explain:
+   ```js
+   console.log(true > false);
+   console.log("10" > "2");
+   console.log(NaN > 5);
+   ```
+
+
+PART-c ANSWER===========>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// Q1. 
+console.log(78 > 40); // true
+
+// Q2.
+console.log(35 > 28); // true
+
+// Q3. 
+console.log(15 > 10); // true
+console.log(10 > 15); // false
+console.log(10 > 10); // false
+
+// Q4.
+console.log("20" > 15);  // true
+console.log("5" > "10"); // true
+console.log("abc" > 10); // false
+
+// Q5.
+console.log(null > 0);      // false
+console.log(undefined > 0); // false
+
+reason:==
+null converts to 0, so 0 > 0 is false.
+undefined converts to NaN, so the comparison is false.
+
+// Q6. 
+let stock = 120;
+let customerWants = 85;
+console.log(stock > customerWants); // true
+
+// Q7. 
+console.log(true > false); // true
+console.log("10" > "2");   // false
+console.log(NaN > 5);      // false
+
+============================================================================================================
+### 6. Less Than `<`
+1. A box can hold maximum 50 kg. Current weight is 42 kg. Check if more items can still be added.  
+2. Age of a person is 16. Minimum age required is 18. Check if the person is underage.  
+3. Predict the output:
+   ```js
+   console.log(8 < 12);
+   console.log(20 < 10);
+   console.log(7 < 7);
+   ```
+4. Predict the output:
+   ```js
+   console.log("8" < 10);
+   console.log("20" < "3");
+   console.log("hello" < 5);
+   ```
+5. What is the result of `null < 0` and `undefined < 0`? Explain.  
+6. A tank capacity is 500 litres. Current water level is 375 litres. Write a condition using `<` to check if it is not full.  
+7. Predict and explain:
+   ```js
+   console.log(false < true);
+   console.log("5" < "15");
+   console.log(NaN < 10);
+   ```
+ANSwer:======================================================================================......>>>>>>>>>>>>>>>>>>>>>>
+
+
+// Q1. 
+console.log(42 < 50); // true
+
+// Q2.
+console.log(16 < 18); // true
+
+// Q3. 
+console.log(8 < 12); // true
+console.log(20 < 10); // false
+console.log(7 < 7);  // false
+
+// Q4.
+console.log("8" < 10);       // true
+console.log("20" < "3");     // true
+console.log("hello" < 5);    // false
+
+// Q5. 
+console.log(null < 0);      // false
+console.log(undefined < 0); // false
+
+reason:
+null converts to 0, so 0 < 0 is false.
+undefined converts to NaN, so the comparison is false.
+
+// Q6. 
+let capacity = 500;
+let water = 375;
+console.log(water < capacity); // true
+
+// Q7. 
+console.log(false < true); // true
+console.log("5" < "15");   // false
+console.log(NaN < 10);     // false
+
+============================================================================================================================
+   ### 7. Greater Than or Equal To `>=`
+1. Minimum marks required for distinction is 75. A student scored 75. Check if the student gets distinction.  
+2. Ticket price is ₹300. A person has ₹300. Check if they can buy the ticket.  
+3. Predict the output:
+   ```js
+   console.log(25 >= 25);
+   console.log(30 >= 25);
+   console.log(20 >= 25);
+   ```
+4. Predict the output:
+   ```js
+   console.log("25" >= 25);
+   console.log("10" >= "2");
+   console.log(null >= 0);
+   ```
+5. What is the result of `undefined >= 0`? Explain.  
+6. A lift can carry maximum 8 people. Currently 8 people are inside. Write a condition using `>=` to check if the lift is full or overloaded.  
+7. Predict and explain:
+   ```js
+   console.log(true >= 1);
+   console.log("" >= 0);
+   console.log(NaN >= NaN);
+   ```
+Answer:======================================================================================================================
 
    
+// Q1. 
+console.log(75 >= 75); // true
+
+// Q2. 
+console.log(300 >= 300); // true
+
+// Q3. 
+console.log(25 >= 25); // true
+console.log(30 >= 25); // true
+console.log(20 >= 25); // false
+
+// Q4.
+console.log("25" >= 25);  // true
+console.log("10" >= "2"); // false
+console.log(null >= 0);   // true
+
+// Q5.
+console.log(undefined >= 0); // false
+
+reason:
+undefined converts to NaN.
+Comparisons involving NaN always returns false.
+
+// Q6. 
+let people = 8;
+let capacity = 8;
+console.log(people >= capacity); // true
+
+// Q7. 
+console.log(true >= 1);    // true     //true converts to 1.
+console.log("" >= 0);      // true      // "" converts to 0 .
+console.log(NaN >= NaN);   // false    //comparisons involving NaN always return false
+   
+========================================================================================================================
+
+### 8. Less Than or Equal To `<=`
+1. Maximum speed limit is 60 km/h. A vehicle is travelling at 60 km/h. Check if it is within the limit.  
+2. A student needs at least 40 marks to pass. He scored 39. Check if he has failed.  
+3. Predict the output:
+   ```js
+   console.log(15 <= 20);
+   console.log(20 <= 15);
+   console.log(15 <= 15);
+   ```
+4. Predict the output:
+   ```js
+   console.log("15" <= 20);
+   console.log("30" <= "5");
+   console.log(null <= 0);
+   ```
+5. What is the result of `undefined <= 0`? Explain.  
+6. A bag can hold maximum 10 books. Currently it has 10 books. Write a condition using `<=` to check if more books can be added.  
+7. Predict and explain:
+   ```js
+   console.log(false <= 0);
+   console.log("" <= 0);
+   console.log(NaN <= 5);
+   ```
+answer===================================================================================================================
+
+
+
+// Q1.
+console.log(60 <= 60); // true
+
+// Q2. 
+console.log(39 < 40); // true (Failed)
+
+// Q3. 
+console.log(15 <= 20); // true
+console.log(20 <= 15); // false
+console.log(15 <= 15); // true
+
+// Q4.
+console.log("15" <= 20);  // true
+console.log("30" <= "5"); // true
+console.log(null <= 0);   // true
+
+// Q5. 
+console.log(undefined <= 0); // false
+
+reason:
+undefined converts to NaN.
+Comparisons involving NaN return false.
+
+// Q6. 
+let books = 10;
+let capacity = 10;
+console.log(books < capacity); // false (No space left)
+
+// Q7. 
+console.log(false <= 0); // true
+console.log("" <= 0);    // true
+console.log(NaN <= 5);   // false
+
+
+================================================================================================================================
+
+
+   ### Mixed Practice (>, <, >=, <=)
+1. Write expressions to check:
+   - Whether age `18` is greater than or equal to voting age `18`.
+   - Whether temperature `32` is less than `35`.
+   - Whether score `90` is greater than `85`.
+2. Predict the outputs:
+   ```js
+   console.log(10 > 5 && 5 < 10);
+   console.log("10" >= 10);
+   console.log(null <= undefined);
+   console.log("5" < "10" && 5 > 2);
+   ```
+3. A product costs ₹499. A customer has ₹500. Write conditions using `>=` and `<` to decide if the customer can buy it and if any change will be left.  
+4. Explain why `"10" > "2"` is `false` but `10 > 2` is `true`.
+
+answer==========================================================================================================
+
+
+  
+// Q1.
+// a) 
+console.log(18 >= 18); // true
+
+// b) 
+console.log(32 < 35); // true
+
+// c) 
+console.log(90 > 85); // true
+
+
+// Q2. 
+
+console.log(10 > 5 && 5 < 10);       // true
+console.log("10" >= 10);             // true
+console.log(null <= undefined);      // false
+console.log("5" < "10" && 5 > 2);    // false
+
+
+// Q3. 
+
+let price = 499;
+let money = 500;
+
+
+console.log(money >= price); // true
+
+ 
+console.log(money > price); // true
+
+
+console.log(money - price); // 1
+
+
+// Q4. 
+
+console.log("10" > "2"); // false
+console.log(10 > 2);     // true
+
+reason:
+"10" and "2" are strings, so they are compared
+by ascii value , character by character.
+The first character "1" comes before "2", so false.
+
+10 and 2 are numbers, so their numerical values
+are compared. Since 10 is greater than 2, so it is  true.
