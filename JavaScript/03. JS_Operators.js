@@ -1258,3 +1258,178 @@ The first character "1" comes before "2", so false.
 
 10 and 2 are numbers, so their numerical values
 are compared. Since 10 is greater than 2, so it is  true.
+
+   // =============================================================================================================
+
+
+   ## Part E]: Increment / Decrement Operators (`++` / `--`)
+
+### Part a:
+
+1. A counter starts at `5`. Use the increment operator to increase it by 1 and print the new value.  
+2. A player has `3` lives. Use the decrement operator to reduce one life and print the remaining lives.  
+3. Start with `score = 10`. Increase the score using `++` and print it.  
+4. Start with `items = 8`. Decrease the items using `--` and print it.  
+5. Declare `count = 0`. Increment it twice and print the final value.
+// Answers===============================================================================================================
+// q1.
+//    let counter = 5;
+// counter++;
+// console.log(counter);  //6
+
+//    Q2.
+//    let live = 3;
+// live--;
+// console.log(live)   //2
+
+
+//    Q3. 
+//    let score=10;
+// score++;
+// console.log(score)   //11
+
+//    Q4.
+//    let items=8;
+// items--;
+// console.log(items)  //7
+
+// Q5.
+//    let count=0;
+// count++;
+// count++;
+// console.log(count)
+================================================================================================================
+### Part b:
+
+6. Start with `x = 5`.  
+   - Create `y = x++`  
+   - Print both `x` and `y`.  
+   Explain why the values are different.
+
+7. Start with `a = 5`.  
+   - Create `b = ++a`  
+   - Print both `a` and `b`.  
+   Explain the difference from the previous question.
+
+8. Start with `lives = 3`.  
+   - Use post-decrement (`lives--`) and store the result in `previousLives`.  
+   - Print both variables.
+
+9. Start with `attempts = 0`.  
+   - Use pre-increment (`++attempts`) and store the result in `currentAttempts`.  
+   - Print both variables.
+
+10. Start with `points = 100`.  
+    - Increase it using `++`  
+    - Then decrease it using `--`  
+    - Print the final value.
+Answer==============================================================================================
+   Q6.
+let x = 5;
+let y = x++;
+
+console.log(x);
+console.log(y);
+reason==
+   — x starts at 5.
+— first, the current value of x (5) is assigned to y.Then, x increases by 1, becoming 6
+
+Q7.
+   let a = 5;
+let b = ++a;
+
+console.log(a);
+console.log(b);
+
+Q8.
+   let lives = 3;
+let previousLives = lives--;
+
+console.log(lives);
+console.log(previousLives);
+
+Q9.
+   let attempts = 0;
+let currentAttempts = ++attempts;
+
+console.log(attempts);
+console.log(currentAttempts);
+
+Q10.
+   let points = 100;
+
+++points;
+--points;
+
+console.log(points);
+
+==================================================================================================================
+### Part c:
+
+11. Predict the output:
+    ```js
+    let x = 10;
+    let y = x++;
+    let z = ++x;
+    console.log(x, y, z);
+    ```
+
+12. Predict the output:
+    ```js
+    let a = 5;
+    let b = a-- + ++a;
+    console.log(a, b);
+    ```
+
+13. Predict the output:
+    ```js
+    let m = 7;
+    let n = --m + m++;
+    console.log(m, n);
+    ```
+
+14. Predict the output:
+    ```js
+    let p = 3;
+    let q = p++ + ++p + p;
+    console.log(p, q);
+    ```
+
+15. Predict the output:
+    ```js
+    let val = 0;
+    val = val++ + ++val;
+    console.log(val);
+    ```
+
+---
+   Answer=============================================================================================================
+   Q11.
+   
+let x = 10;
+let y = x++;
+let z = ++x;
+console.log(x, y, z); // 12,10,12
+
+
+Q12.
+   let a = 5;
+let b = a-- + ++a;
+console.log(a, b); // 5,10
+
+Q13.
+   let m = 7;
+let n = --m + m++;
+console.log(m, n); // 7,13
+
+   Q14.
+      let p = 3;
+let q = p++ + ++p + p;
+console.log(p, q);   // 5,13
+
+Q15.
+   let val = 0;
+val = val++ + ++val;
+console.log(val);    //2
+
+   
