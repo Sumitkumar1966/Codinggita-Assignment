@@ -1432,4 +1432,267 @@ Q15.
 val = val++ + ++val;
 console.log(val);    //2
 
+ // ==================================================================================================================
+    ## Part F]: Logical Operators
+
+***
+
+### 1. Logical AND `&&`
+
+Write a JavaScript program for each:
+
+1. Stored username is `"admin"` and password is `1234`. Check if both are valid using `&&` and print the result.  
+2. A user is logged in (`isLoggedIn = true`) and has permission (`hasPermission = true`). Check if they can access a page using `&&`.  
+3. A product is in stock (`inStock = true`) and its price is less than ₹1000 (`price = 800`). Check if it can be bought using `&&`.  
+4. A student has marks `75` and attendance `80`. Passing requires marks greater than `65` **and** attendance greater than `70`. Check using `&&`.  
+5. Two conditions: `isWeekend = true` and `isHoliday = false`. A party happens only if both are true. Check using `&&`.
+// Answers===========================================================================================
    
+// Q1.
+//    let username = "admin";
+// let password = 1234;
+// console.log(username === "admin" && password === 1234);   //true
+
+   Q@
+let isLoggedIn=true;
+let hasPermission=true;
+let isAccess=isLoggedIn && hasPermission
+console.log(isAccess)  // teur
+
+Q3.
+   let inStock=true;
+let price=800;
+let canBought=inStock&&(price>=1000);
+console.log(canBought);  // false
+
+Q4
+let marks = 75;
+let attendance = 80;
+
+console.log(marks > 65 && attendance > 70);  //true
+
+
+Q5.
+   let isWeekend = true;
+let isHoliday = false;
+
+console.log(isWeekend && isHoliday); //false
+
+// ==============================================================================================================
+
+### Additional Questions (Logical AND `&&`)
+
+6. Predict the output:
+   ```js
+   let a = 0;
+   let b = 10;
+   let result = a && b;
+   console.log(result);  ===>>>>>>> 0
+   ```
+
+7. Predict the output:
+   ```js
+   let x = 5;
+   let y = 10;
+   let result = (x > 3 && y) || 0;
+   console.log(result);  =========>>>> 10
+   ```
+
+8. Predict the output:
+   ```js
+   let p = "Hello";
+   let q = "";
+   let r = "World";
+   let result = p && q && r;
+   console.log(result);   ==========>>>>>>>>""
+   ```
+
+9. Predict the output:
+   ```js
+   let val = 5;
+   let condition = val && (val = 0);
+   console.log(condition); ===========>>>> 0
+   console.log(val);    ===========>>>> 0
+   ```
+
+10. Predict the output:
+    ```js
+    let x = 10;
+    let y = 20;
+    let result = (x && y) && (x > y);
+    console.log(result);   ========>>>>> false
+    ```
+
+***
+// =================================================================================================================
+### 2. Logical OR `||`
+
+Write a JavaScript program for each:
+
+1. A user can login with either a correct password (`passwordCorrect = true`) or a valid OTP (`otpValid = false`). Check if login is allowed using `||`.  
+2. A discount applies if the user is a member (`isMember = false`) or has a coupon (`hasCoupon = true`). Check using `||`.  
+3. Entry is allowed if age is above `18` (`age = 16`) **or** height is above `150` cm (`height = 155`). Check using `||`.  
+4. A form is valid if either email is given (`emailGiven = true`) or phone is given (`phoneGiven = false`). Check using `||`.  
+5. A game level opens if score is above `1000` (`score = 900`) **or** time bonus is collected (`timeBonus = true`). Check using `||`.
+
+// =============================================================================================================
+Q1.
+   let passwordCorrect = true;
+let otpValid = false;
+
+console.log(passwordCorrect || otpValid);  // true
+Q2.
+   let isMember = false;
+let hasCoupon = true;
+let isDiscountApplied=isMember||hasCoupon;
+console.log(isDiscountApplied)       // true
+
+Q3.
+   let age = 16;
+let height = 155;
+
+console.log(age > 18 || height > 150); //true
+
+Q4.
+   
+   let emailGiven = true;
+let phoneGiven = false;
+
+console.log(emailGiven || phoneGiven);
+
+q5
+let score = 900;
+let timeBonus = true;
+
+console.log(score > 1000 || timeBonus);
+
+// =================================================================================================================
+
+### Additional Questions (Logical OR `||`)
+
+6. Predict the output:
+   ```js
+   let a = 0;
+   let b = false;
+   let c = "";
+   let d = null;
+   let e = 42;
+   let result = a || b || c || d || e;
+   console.log(result);    ===============>>>>>>>>> 42
+   ```
+
+7. Predict the output:
+   ```js
+   let x = "Hello" || 0;
+   let y = 0 || "Hi";
+   console.log(x, y); ============>>>>>>>> hello hi
+   ```
+
+8. Predict the output:
+   ```js
+   let a = 10;
+   let b = 20;
+   let result = (a < 5) || (b > 15);
+   console.log(result); ============>>>>>> true
+   ```
+
+9. Predict the output:
+   ```js
+   let val = 5;
+   let condition = val || (val = 0);
+   console.log(condition);============>>>>>> 5
+   console.log(val);==========>>>>>>>>>>>> 5
+   ```
+
+10. Predict the output:
+    ```js
+    let x = "" || 0 || false || null || undefined || "OK";
+    console.log(x);============>>>>>> OK
+    ```
+
+***
+
+// ============================================================================================================
+
+      ### 3. Logical NOT `!`
+
+Write a JavaScript program for each:
+
+1. A user is not banned (`isBanned = false`). Check if they can login by negating `isBanned` using `!`.  
+2. A task is not completed (`isCompleted = false`). Check if it is still pending using `!`.  
+3. A light is on (`isOn = true`). Check if it is off using `!`.  
+4. A subscription is not active (`isActive = false`). Check if the user cannot access premium content using `!`.  
+5. A file is not read‑only (`isReadOnly = false`). Check if it can be edited using `!`.
+
+   // ==========================================================================================================
+
+   Q1.
+   let isBanned = false;
+
+console.log(!isBanned);  ===>. true
+
+Q2.
+   let isCompleted = false;
+console.log(!isCompleted);
+q3.
+   
+let isOn = true;
+
+console.log(!isOn);
+
+q4.
+   let isActive = false;
+
+console.log(!isActive);
+
+Q5.
+   let isReadOnly = false;
+
+console.log(!isReadOnly);
+
+// ==============================================================================================================
+### Additional Questions (Logical NOT `!`)
+
+6. Predict the output:
+   ```js
+   let a = 0;
+   let b = 1;
+   console.log(!a, !b);   =======>>>>>> true false
+   ```
+
+7. Predict the output:
+   ```js
+   let x = "Hello";
+   let y = "";
+   console.log(!x, !y);  ============>>>>>>>>> false true
+   ```
+
+8. Predict the output:
+   ```js
+   let val = 5;
+   let result = !val;
+   console.log(result); ==========>>>>>>>>>false
+   ```
+
+9. Predict the output:
+   ```js
+   let a = 10;
+   let b = 20;
+   let result = !(a && b);
+   console.log(result);  ===========>>>>>>>>>false
+   ```
+
+10. Predict the output:
+    ```js
+    let x = 0;
+    let y = 1;
+    let result = !(x || y);
+    console.log(result);   ==========>>>>>>false
+    ```
+
+***
+   
+
+   
+
+
