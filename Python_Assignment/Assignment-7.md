@@ -1,4 +1,4 @@
-<img width="1061" height="1599" alt="image" src="https://github.com/user-attachments/assets/2da08b4d-6538-46e5-9cf3-5c9c28e6b158" /><img width="1080" height="1569" alt="image" src="https://github.com/user-attachments/assets/a1fe7ca1-e8b1-4080-afea-327a6ea88a79" /><img width="1080" height="1569" alt="image" src="https://github.com/user-attachments/assets/d18cd457-6ed0-4fb0-ae6c-ddf77436c7cf" /><img width="1080" height="1298" alt="image" src="https://github.com/user-attachments/assets/82575dc4-faf5-42d6-93cb-78ade87f62a0" /><img width="1080" height="1569" alt="image" src="https://github.com/user-attachments/assets/b2aeb4b9-dcb3-43ef-8340-b5c6082ea0a4" /><img width="1080" height="1569" alt="image" src="https://github.com/user-attachments/assets/59ebca12-0363-4f58-b462-abe0aad73e4f" /><img width="1080" height="1569" alt="image" src="https://github.com/user-attachments/assets/a6bbc441-29c6-4c12-9533-4a89761d9df8" /># Assignment-7
+
 
 **Topic:** Python While Loop
 
