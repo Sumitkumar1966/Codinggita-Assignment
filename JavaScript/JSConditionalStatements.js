@@ -484,6 +484,33 @@ if (year % 4 == 0) {
 } else {
     console.log("Not a Leap Year");
 }
+q6.
+let email = "abc.cg@gmail.com";
 
+if (email.includes("@") == true) {
+
+    let last_chars = email[email.length - 4] + email[email.length - 3] + email[email.length - 2] + email[email.length - 1];
+
+    if (last_chars == ".com") {
+        if (email.length > 10) {
+            console.log(`The email ${email} is Valid Email`);
+        }
+    }
+}
+
+Q7. let cartTotal=1000;
+let isPremiumMembership=true;
+if (cartTotal>=1000){
+  if (isPremiumMembership==true){
+    console.log(cartTotal*0.8)
+  }else{
+    console.log(cartTotal*0.9)
+  }
+}
+
+Q8.
+  let N=15;
+
+  
 
   
