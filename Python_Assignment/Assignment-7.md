@@ -385,3 +385,103 @@ Answers====>>>>
 <img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/5cf52d85-15f9-4716-b90d-199348ab7619" />
 
 <img width="950" height="1482" alt="image" src="https://github.com/user-attachments/assets/b758b509-9be3-4e61-9f2e-c3625f47ea87" />
+
+
+======================================================================================
+<pre>
+Answers==>>
+Q21.
+
+N = int(input())
+
+i = 1
+while i <= N:
+    print(i)
+    i = i + 1
+
+Q22.
+    N=5
+
+while N>=1:
+    print(N)
+    N=N-1
+
+    Q23.
+
+n=10
+i=2
+while i<=n:
+    print(i)
+    i=i+2
+
+    Q24.
+
+    n=9
+i=1
+while i<=9:
+    print(i)
+    i=i+2
+
+    Q25
+
+    K = 3
+N = 15
+
+i = K
+while i <= N:
+    print(i)
+    i = i + K
+
+Q26
+    n=10
+k=4
+i=1
+while i<=10:
+    print(f"{k}*{i}={k*i}")
+    i=i+1
+
+    Q27
+
+    start=2
+step=3
+i=1
+while i<=5:
+    print(start)
+    start=start+step
+    i=i+1
+
+
+    Q28.
+n=5
+i=1
+sum=0
+while i<=5:
+    sum=sum+i
+    i=i+1
+print(sum)
+    
+Q29
+
+    n=10
+i=0
+sum=0
+while i<=n:
+    sum=sum+i
+    i=i+2
+print(sum)
+
+
+Q30
+
+    n=7
+i=1
+sum=0
+while i<=n:
+    sum=sum+i
+    i=i+2
+print(sum)
+
+Q31.
+    
+    
+</pre>
