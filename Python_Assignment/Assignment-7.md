@@ -482,6 +482,117 @@ while i<=n:
 print(sum)
 
 Q31.
+   price=20
+quantity=4
+total=0
+i=1
+while i<=4:
+    total=total+price
+    i=i+1
+print(total)
+
+
+Q32
+
+
+    total_saving=25
+day=6
+total=0
+i=1
+while i<=day:
+    total=total+total_saving
+    i=i+1
+print(total)
+
+    Q33.
+
+    base=3
+power=4
+i=1
+total=1
+while i<=4:
+    total=total*base
+    i=i+1
+print(total)
+    
+    
+Q34
+
+    n=5
+i=1
+result=1
+while i<=n:
+    result=result*i
+    i=i+1
+print(result)
+
+Q35
+
+    start=3
+end=7
+sum=0
+while start<=end:
+    sum=sum+start
+    start=start+1
+print(sum)
+
+
+    Q36
+
+    n=10
+i=2
+while n>=i:
+    print(n)
+    n=n-2
+
+    Q37
+
+
+    N = 20
+
+while N > 0:
+    N = N // 2
+    print(N)
+    
+Q38
+
+    N=11
+count=0
+while N>=0:
+    count=count+1
+    N=N-3
+    
+print(count)
+
+    Q39
+
+    
+daily_amount=15
+save=20
+target=70
+count=0
+while save<=70:
+    count=count+1
+    save=save+daily_amount
+print(count)
+
+    Q40
+
+
+    start=20
+step=5
+while start>=0:
+    print(start)
+    start=start-step
+
+    Q41
+
+    
+    
+    
+    
+    
+    
     
     
 </pre>
