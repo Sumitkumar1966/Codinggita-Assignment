@@ -231,6 +231,140 @@ for (let i=1;i<=8;i++){
 }
 
 
+## Part B] For Loop (Additional advanced questions)
+---
+1. Given an array of temperatures `[28, 32, 25, 40, 18, 35]`, use a `for` loop to count how many days were hotter than 30°C.  
+2. Write a `for` loop that calculates the sum of all digits of a given number (example: 4729 → 4+7+2+9 = 22).  
+3. Create a `for` loop that prints only the numbers between 1 and 100 that are divisible by both 3 and 5, but not by 7.  
+4. Given the string `"JavaScript"`, use a `for` loop to create a new string that contains only the consonants (remove vowels).  
+5. Write a `for` loop that finds the largest number in an array of positive integers without using any sorting method.  
+6. Use a `for` loop to check whether a given number is a perfect number (a number equal to the sum of its proper divisors). Example: 28.  
+7. Print the following series using a single `for` loop:  
+   `1 2 4 8 16 32 64 128` 
+8. Write a `for` loop that prints the first 20 Fibonacci numbers (starting with 0 and 1).
+9. Given an array of student scores `[45, 78, 90, 32, 56, 88]`, use a `for` loop to calculate the average and also count how many students scored above the average.  
+10. Write a `for` loop that converts a decimal number to its binary representation (without using built-in methods like `toString(2)`).
+
+### Note: Question No. 8 & 10 are optional from above.
+
+---
+
+// ================================================================================================================
+
+// Q1
+
+let temp=[28,32,25,40,18,35];
+let count=0;
+for (let i=0; i<=temp.length-1;i++){
+    if (temp[i]>30){
+        count+=1
+    }}
+console.log(count);
+
+q2
+
+let n=4729;
+let numStr = String(n)
+let sum=0;
+for (let i=0;i < numStr.length;i++){
+    let digit=n%10;
+    sum=sum+digit;
+    n=Math.floor(n/10)   
+}
+console.log(sum)
+
+q3
+
+for (let i=0;i<=100;i++){
+    if (i%3==0 && i%5==0 && i%7!=0){
+        console.log(i)
+    }
+}
+Q4
+let s="javascript";
+t="";
+for (let i=0;i<s.length;i++){
+    if ("aeiou".includes(s[i])) {
+        continue;
+    }
+    t=t+s[i]
+}
+console.log(t)
+
+Q5
+
+let arr=[10,20,50,60,78,67];
+let greater=0;
+for (let i=0;i<arr.length;i++){
+    if (arr[i]>greater){
+        greater=arr[i]
+    }
+}
+console.log(greater)
+
+Q6
+let n=28;
+let sum=0;
+for (let i=0;i<n;i++){
+    if (n%i==0){
+        sum=sum+i
+    }
+
+}
+if (sum==n){
+    console.log("Perfect number")
+}else{
+    console.log("Not a perfect number")
+}
+
+Q7
+
+let num = 1;
+
+for (let i = 1; i <= 8; i++) {
+    console.log(num);
+    num = num * 2;
+}
+
+q8
+let a=0;
+let b=1;
+for (let i=0;i<=20;i++){
+    console.log(a);
+    let next=a+b
+    a=b
+    b=next
+}
+
+Q9
+
+let scores = [45, 78, 90, 32, 56, 88];
+let sum = 0;
+
+for (let i = 0; i < scores.length; i++) {
+    sum = sum + scores[i];
+}
+
+let average = sum / scores.length;
+let count = 0;
+
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i] > average) {
+        count++;
+    }
+}
+
+console.log("Average:", average);
+console.log("Students above average:", count);
+
+q10
+
+
+
+
+
+
+
 
 
 
