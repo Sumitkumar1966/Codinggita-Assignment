@@ -358,6 +358,172 @@ console.log("Average:", average);
 console.log("Students above average:", count);
 
 q10
+let  n = 13;
+let binary = "";
+
+for (; n > 0; ) {
+    var r = n % 2;
+    binary = r + binary;
+    n = Math.floor(n / 2);
+}
+
+console.log(binary);
+
+
+
+
+
+
+
+
+
+
+
+
+### Part C-a] `break` inside a  `for` Loop
+
+1. Write a `for` loop that searches for the first occurrence of the number 7 in an array. As soon as it finds 7, print its index and stop the loop using `break`.  
+2. Simulate a simple password checker: keep asking the user for a password (using a `for` loop that runs maximum 5 times). If the correct password is entered, print “Access granted” and `break`. If all 5 attempts fail, print “Account locked”.  
+3. Write a `for` loop that adds numbers from 1 onwards until the sum exceeds 100. Print the last number that was added before the sum crossed 100 and stop using `break`.  
+4. Given an array of names, use a `for` loop to find the first name that starts with the letter “S”. Print that name and immediately stop the loop with `break`.  
+5. Create a `for` loop that prints numbers from 1 to 50. Stop completely (`break`) as soon as you encounter a number that is both a perfect square and greater than 20.
+
+---
+q1
+var arr = [2, 4, 6, 7, 9, 7];
+
+for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === 7) {
+        console.log(i);
+        break;
+    }
+}
+Q2
+
+
+let correct = "hello123";
+let found = false;
+
+for (let i = 1; i <= 5; i++) {
+    let password = "hello123"; 
+
+    if (password === correct) {
+        console.log("Access granted");
+        found = true;
+        break;
+    }
+}
+
+if (found === false) {
+    console.log("Account locked");
+}
+
+q3.
+let sum = 0;
+
+for (let i = 1; ; i++) {
+    sum = sum + i;
+
+    if (sum > 100) {
+        console.log(i - 1);
+        break;
+    }
+}
+q4.
+let names = ["Aman", "Rahul", "Simran", "Sahil", "Neha"];
+
+for (let i = 0; i < names.length; i++) {
+    if (names[i][0] === "S") {
+        console.log(names[i]);
+        break;
+    }
+}
+q5.
+for (let i = 1; i <= 50; i++) {
+    if (i > 20 && (i == 25 || i == 36 || i == 49)) {
+        console.log(i);
+        break;
+    }
+}
+
+// ====================================================================================
+
+### Part C-b] `continue` inside a `for` Loop
+
+1. Print all numbers from 1 to 30, but skip every number that is divisible by 4 using `continue`.  
+2. Given an array of mixed positive and negative numbers, use a `for` loop with `continue` to calculate the sum of only the positive numbers.  
+3. Write a `for` loop that prints every character of the string `"Hello World"`, but skips all spaces using `continue`.  
+4. Print the multiplication table of 6 from 1 to 12, but skip the rows where the product is divisible by 5 (use `continue`).  
+5. Given an array of ages `[12, 18, 25, 15, 30, 17, 22]`, use a `for` loop with `continue` to print only the ages of people who are eligible to vote (age ≥ 18).
+
+// ===============================================================================================
+
+### Part C-b] `continue` inside a `for` Loop
+
+1. Print all numbers from 1 to 30, but skip every number that is divisible by 4 using `continue`.  
+2. Given an array of mixed positive and negative numbers, use a `for` loop with `continue` to calculate the sum of only the positive numbers.  
+3. Write a `for` loop that prints every character of the string `"Hello World"`, but skips all spaces using `continue`.  
+4. Print the multiplication table of 6 from 1 to 12, but skip the rows where the product is divisible by 5 (use `continue`).  
+5. Given an array of ages `[12, 18, 25, 15, 30, 17, 22]`, use a `for` loop with `continue` to print only the ages of people who are eligible to vote (age ≥ 18).
+
+// ==================================================================================
+q1.
+for (let i = 1; i <= 30; i++) {
+    if (i % 4 === 0) {
+        continue;
+    }
+    console.log(i);
+}
+q2.
+let arr = [10, -5, 20, -8, 7, -2];
+let sum = 0;
+
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
+        continue;
+    }
+    sum = sum + arr[i];
+}
+
+console.log(sum);
+
+q3.
+let s = "Hello World";
+let bag=""
+
+for (var i = 0; i < s.length; i++) {
+    if (s[i] == " ") {
+        continue;
+    }
+    bag=bag+s[i];
+}
+console.log(bag)
+
+Q4.
+for (let i = 1; i <= 12; i++) {
+    let product = 6 * i;
+
+    if (product % 5 == 0) {
+        continue;
+    }
+
+    console.log("6 x " + i + " = " + product);
+}
+
+q5.
+let ages = [12, 18, 25, 15, 30, 17, 22];
+
+for (let i = 0; i < ages.length; i++) {
+    if (ages[i] < 18) {
+        continue;
+    }
+    console.log(ages[i]);
+}
+
+// =====================================================================================================================
+
+
+
 
 
 
