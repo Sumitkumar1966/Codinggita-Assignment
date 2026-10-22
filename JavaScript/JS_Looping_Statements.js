@@ -522,7 +522,161 @@ for (let i = 0; i < ages.length; i++) {
 
 // =====================================================================================================================
 
+### Part D] `Reverse` For Loop
 
+1. Write a reverse `for` loop that prints all numbers from 50 down to 1 that are divisible by 3 but **not** divisible by 9.  
+
+2. Write a reverse `for` loop that calculates the product of all odd digits of a given number (example: 4729 → 7 × 9 = 63).   
+
+3. Given the string `"Programming"`, use a reverse `for` loop to create a new string that contains only the consonants in reverse order. 
+
+4. Write a reverse `for` loop that prints the first 15 Fibonacci numbers in **reverse order** (starting from the 15th number down to 0).
+
+5. Use a reverse `for` loop to check whether a given number is a palindrome by comparing digits from both ends (without converting the number to a string).  
+
+6. Given an array `[12, 45, 7, 23, 56, 89, 34]`, use a reverse `for` loop to find the largest number that is less than 50 (do **not** use any built-in methods).   
+
+7. Given an array of temperatures `[32, 28, 41, 19, 35, 27, 38]`, use a reverse `for` loop to count how many days were colder than 30°C, starting from the last day.  
+
+8. Write a reverse `for` loop that converts a decimal number to its binary representation but prints the binary digits in reverse order (example: 13 → 1011 becomes 1101).  
+
+9. **(Reverse For Loop + `break`)**  
+Given an array `[90, 85, 70, 95, 60, 88, 75]`, use a reverse `for` loop to find the first score (starting from the end) that is greater than 80. Print that score and its index, then stop the loop using `break`.  
+
+10. **(Reverse For Loop + `continue`)**  
+Write a reverse `for` loop that prints numbers from 40 down to 1, but skips every number that is a perfect square using `continue`.
+
+
+// ================================================================================================================
+q1
+
+for (let i = 50; i >= 1; i--) {
+    if (i % 3 == 0 && i % 9 != 0) {
+        console.log(i);
+    }
+}
+q2.
+let n=4729;
+let product=1;
+let y=String(n).length
+for (let i=0;i<=y;i++){
+    let digit=n%10
+    if (digit%2!=0){
+        product=product*digit
+    }
+    n=Math.floor(n/10)
+
+}
+console.log(product) 
+
+q3
+
+let s = "Programming";
+let result = "";
+let vowels = "aeiouAEIOU";
+
+for (let i = s.length - 1; i >= 0; i--) {
+    if (!vowels.includes(s[i])) {
+        result = result + s[i];
+    }
+}
+
+console.log(result);
+q4
+let a=14;
+let b=15;
+let arr=[];
+for (let i=0;i<15;i++){
+    arr[i] = a;
+    let c=a+b;
+    a=b;
+    b=c;
+}
+for (let i = 14; i >= 0; i--) {
+    console.log(arr[i]);
+}
+q5
+let n=121;
+let t=n;
+y=String(n).length
+let reverse=0;
+for (let i=0;i<y;i++){
+    let digit=n%10
+    reverse=reverse*10+digit
+    n=Math.floor(n/10)
+
+}
+if (t == reverse) {
+    console.log("Palindrome");
+} else {
+    console.log("Not Palindrome");
+}
+Q6
+
+let arr = [12, 45, 7, 23, 56, 89, 34];
+let largest = -Infinity;
+
+for (let i = arr.length - 1; i >= 0; i--) {
+    if (arr[i] < 50 && arr[i] > largest) {
+        largest = arr[i];
+    }
+}
+
+console.log(largest);
+q7
+
+let temp = [32, 28, 41, 19, 35, 27, 38];
+let count = 0;
+
+for (let i = temp.length - 1; i >= 0; i--) {
+    if (temp[i] < 30) {
+        count++;
+    }
+}
+
+console.log(count);
+q8
+
+let  n = 13;
+let binary = "";
+
+for (; n > 0; ) {
+    var r = n % 2;
+    binary = r + binary;
+    n = Math.floor(n / 2);
+}
+
+console.log(binary);
+
+q9
+
+let scores = [90, 85, 70, 95, 60, 88, 75];
+
+for (let i = scores.length - 1; i >= 0; i--) {
+    if (scores[i] > 80) {
+        console.log("Score:", scores[i]);
+        console.log("Index:", i);
+        break;
+    }
+}
+q10
+
+for (let i = 40; i >= 1; i--) {
+    let square = false;
+
+    for (let j = 1; j * j <= i; j++) {
+        if (j * j == i) {
+            square = true;
+            break;
+        }
+    }
+
+    if (square) {
+        continue;
+    }
+
+    console.log(i);
+}
 
 
 
