@@ -680,6 +680,14 @@ for (let i = 40; i >= 1; i--) {
     console.log(i);
 }
 
+method -2
+for (let i=40;i>=1;i--){
+    if ((i**0.5)%1==0){
+        continue;
+    }
+    console.log(i)
+}
+
 
 
 
