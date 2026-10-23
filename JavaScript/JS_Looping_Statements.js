@@ -405,9 +405,9 @@ let correct = "hello123";
 let found = false;
 
 for (let i = 1; i <= 5; i++) {
-    let password = "hello123"; 
+    let password = prompt("Enter your password:"); 
 
-    if (password === correct) {
+    if (password == correct) {
         console.log("Access granted");
         found = true;
         break;
@@ -417,6 +417,8 @@ for (let i = 1; i <= 5; i++) {
 if (found === false) {
     console.log("Account locked");
 }
+
+
 
 q3.
 let sum = 0;
