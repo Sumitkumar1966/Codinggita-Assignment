@@ -953,6 +953,55 @@ for (let i=5;i>=1;i--){
 }
 q13.
 
+for (let i=1;i<=5;i++){
+    let bag="";
+    for (let j=1;j<=5;j++){
+        if (i==j){
+            bag=bag+" "+" ";
+        }else{
+            bag=bag+"*"+" ";
+        }
+    }
+    console.log(bag)
+}
+Q14.
+for (let i=1;i<=5;i++){
+    let bag="";
+    for (let j=1;j<=10;j++){
+        if ((i*j)%2==0){
+            bag=bag+(i*j)+" "
+        }
+    }
+    console.log(bag)
+}
+Q15
+let i = 1;
+
+while (i <= 3) {
+    let row = "";
+    let j = 1;
+
+    while (j <= 3 - i) {
+        row = row + "  ";
+        j++;
+    }
+
+    j = 1;
+    while (j <= i) {
+        row = row + j + " ";
+        j++;
+    }
+
+    j = i - 1;
+    while (j >= 1) {
+        row = row + j + " ";
+        j--;
+    }
+
+    console.log(row);
+    i++;
+}
+
 
 
 
