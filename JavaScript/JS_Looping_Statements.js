@@ -1002,6 +1002,354 @@ while (i <= 3) {
     i++;
 }
 
+// ==============================================================================================================================================================
+
+## Part E] While Loop
+
+### Q1. Print Numbers
+Write a `while` loop to print numbers from 1 to 10.
+
+### Q2. Sum of Natural Numbers
+Write a `while` loop to calculate the sum of the first 10 natural numbers.
+
+### Q3. Multiplication Table
+Write a `while` loop to print the multiplication table of a given number from 1 to 10.
+
+**Example:**
+Input: 5
+
+Output:
+5 x 1 = 5
+5 x 2 = 10
+...
+5 x 10 = 50
+
+### Q4. Count the Digits
+Write a `while` loop to count the total number of digits in a given positive integer.
+
+**Example:**
+Input: 58372
+Output: 5
+
+### Q5. Reverse a Number
+Write a `while` loop to reverse the digits of a given positive integer.
+
+**Example:**
+Input: 12345
+Output: 54321
+
+### Q6. Sum of Digits
+Write a `while` loop to calculate the sum of all digits of a given number.
+
+**Example:**
+Input: 4729
+Output: 22
+
+### Q7. Print Numbers with Conditions
+Write a `while` loop to print all numbers between 1 and 100 that are divisible by both 3 and 5 but not by 7.
+
+### Q8. Calculate Factorial
+Write a `while` loop to calculate the factorial of a given non-negative integer.
+
+**Example:**
+Input: 5
+Output: 120
+
+### Q9. Check a Palindrome Number
+Write a `while` loop to check whether a given number is a palindrome without converting it into a string.
+
+**Example:**
+Input: 121
+Output: Palindrome number
+
+### Q10. Convert Decimal to Binary
+Write a `while` loop to convert a positive decimal integer into its binary representation without using built-in methods such as `toString(2)`.
+
+**Example:**
+Input: 13
+Output: 1101
+
+---
+
+// ==========================================================================================================================================================
+
+q1.
+let i=1;
+while (i<=10){
+    console.log(i)
+    i++;
+}
+q2.
+let i=1;
+sum=0;
+while (i<=10){
+    sum=sum+i
+    i++;
+}
+console.log(sum)
+q3.
+let i=1;
+n=5;
+while (i<=10){
+    console.log(`${n}*${i}=${n*i}`)
+    i++;
+}
+q4.
+n=58372;
+count=0;
+
+while (n>0){
+    
+    count=count+1;
+    n=Math.floor(n/10);
+    
+}
+console.log(count)
+
+q5.
+n=58372;
+reverse=0;
+
+while (n>0){
+    digit=n%10;
+    reverse=reverse*10+digit;
+    n=Math.floor(n/10);
+    
+}
+console.log(reverse)
+q6.
+n=4729;
+sum=0;
+
+while (n>0){
+    digit=n%10;
+    sum=sum+digit;
+    n=Math.floor(n/10);
+    
+}
+console.log(sum)
+q7.
+i=1;
+while (i<=100){
+    if (i%3==0 && i%5==0 && i%7!=0){
+     console.log(i)   
+    }
+    i++
+    
+
+}
+q8.
+i=1;
+fact=1;
+n=5
+
+while (i<=n){
+    fact=fact*i
+    i++
+}
+console.log(fact)
+
+q9.
+n=121;
+y=n;
+reverse=0;
+while (n>0){
+    digit=n%10;
+    reverse=reverse*10+digit
+    n=Math.floor(n/10)
+}
+if (reverse==y){
+    console.log("palindrome")
+}else{
+    console.log("non-palindrome")
+}
+q10
+n=13;
+
+binary=""
+while (n>0){
+    r=n%2;
+    binary=r+binary;
+    n=Math.floor(n/2);
+
+}
+console.log(binary)
+
+// ================================================================================
+# Part F]: Do-While Loop
+
+### Q1. Print Numbers in Reverse
+Write a `do-while` loop to print numbers from 10 down to 1.
+
+### Q2. Print Even Numbers
+Write a `do-while` loop to print all even numbers between 1 and 20.
+
+### Q3. Sum of Natural Numbers
+Write a `do-while` loop to calculate the sum of the first `n` natural numbers.
+
+**Example:**
+Input: 5
+Output: 15
+
+### Q4. Product of Digits
+Write a `do-while` loop to calculate the product of all digits of a given positive integer.
+
+**Example:**
+Input: 234
+Output: 24
+
+### Q5. Find the First Digit
+Write a `do-while` loop to find the leftmost digit of a given positive integer.
+
+**Example:**
+Input: 58372
+Output: 5
+
+### Q6. Calculate a Power
+Write a `do-while` loop to calculate the power of a number without using `Math.pow()` or the exponentiation operator `**`.
+
+**Example:**
+Input: Base = 3, Exponent = 4
+Output: 81
+
+### Q7. Print Multiples with Conditions
+Write a `do-while` loop to print all numbers between 1 and 100 that are divisible by 4 but not by 8.
+
+### Q8. Check a Palindrome Number
+Write a `do-while` loop to check whether a given positive integer is a palindrome without converting it into a string.
+
+**Example:**
+Input: 1221
+Output: Palindrome number
+
+### Q9. Find the Greatest Common Divisor (GCD)
+Write a `do-while` loop to find the greatest common divisor of two positive integers.
+
+**Example:**
+Input: 48, 18
+Output: 6
+
+### Q10. Convert Decimal to Binary
+Write a `do-while` loop to convert a non-negative decimal integer into binary without using built-in conversion methods.
+
+**Example:**
+Input: 13
+Output: 1101
+
+**Challenge:** Handle the input `0` correctly as well.
+
+// =====================================================================================
+
+Answers:=
+q1
+let i = 10;
+
+do {
+    console.log(i);
+    i--;
+} while (i >= 1);
+q2.
+n=20;
+i=1;
+do {
+    if (i%2==0){
+        console.log(i)
+    }
+    
+    i++
+} while (i<=20)
+q3.
+let n = 5;
+let i = 1;
+let sum = 0;
+
+do {
+    sum = sum + i;
+    i++;
+} while (i <= n);
+
+console.log(sum);
+q4.
+let n = 234;
+let product = 1;
+
+do {
+    let digit = n % 10;
+    product = product * digit;
+    n = Math.floor(n / 10);
+} while (n > 0);
+
+console.log(product);
+q5.
+n=58372;
+do{
+    digit=n%10;
+    n=Math.floor(n/10);
+} while (n>0)
+console.log(digit)
+q6.
+num=4;
+power=3;
+result=1
+i=1;
+do{
+    result=result*num
+    i++
+} while (i<=power)
+console.log(result)
+q7.
+let i = 1;
+
+do {
+    if (i % 4 == 0 && i % 8 != 0) {
+        console.log(i);
+    }
+    i++;
+} while (i <= 100);
+q8.
+let n = 1221;
+let temp = n;
+let reverse = 0;
+
+do {
+    let digit = n % 10;
+    reverse = reverse * 10 + digit;
+    n = Math.floor(n / 10);
+} while (n > 0);
+
+if (temp == reverse) {
+    console.log("Palindrome number");
+} else {
+    console.log("Not a palindrome number");
+}
+q9.
+let a = 48;
+let b = 18;
+let i = 1;
+let gcd = 1;
+
+do {
+    if (a % i == 0 && b % i == 0) {
+        gcd = i;
+    }
+    i++;
+} while (i <= a && i <= b);
+
+console.log(gcd);
+q10.
+let n = 13;
+let binary = "";
+let r;
+
+do {
+    r = n % 2;
+    binary = r + binary;
+    n = Math.floor(n / 2);
+} while (n > 0);
+
+console.log(binary);
+
+
 
 
 
