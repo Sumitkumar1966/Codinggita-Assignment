@@ -138,6 +138,72 @@ console.log(greet());
 
 console.log(sayBye());
 console.log(sayBye());
+// ========================================================================================================
+
+### Section 5: Parameters vs Arguments
+
+**Practical Questions**
+1. Write a function declaration `subtract(a, b)` that returns the difference of two numbers. Call it with arguments `50` and `18` and print the result.  
+2. Create a function expression `greetUser(name)` that returns `"Welcome, " + name + "!"`. Call it with the argument `"Aarav"`.  
+3. Write a function `calculateArea(length, breadth)` that returns the area of a rectangle. Call it twice with different pairs of arguments: `(12, 5)` and `(8, 9)`.
+
+**Theory Questions**
+
+4. What is the difference between a parameter and an argument? Explain with a short example.  
+5. Can a function have parameters but be called without arguments? What happens in that case? Explain briefly.
+
+---
+  // =================================================================================================================
+
+  1.
+  function subtract(a,b){
+  returns a-b
+}
+console.log(subtract(50,18));
+2.
+const greetUser=function(name){
+    return "Welcome, " + name+" !"
+}
+console.log(greetUser("Sumit"))
+3.
+function calculateArea(length,breadth){
+    return length*breadth
+}
+console.log(calculateArea(12,5))
+console.log(calculateArea(8,9))
+4.
+A parameter is a variable written in the function definition, whereas an argument is the actual value passed to the function when calling it.
+  function greet(name) {  // name is a parameter
+    console.log("Hello " + name);
+}
+
+greet("Sumit");  // "Sumit" is an argument
+5.
+Yes, but if no arguments are passed, the parameters get the value undefined in JavaScript (unless default values are provided).
+  function greet(name) {
+    console.log(name);
+}
+
+greet();
+// =====================================================================================================================
+### Section 6: Return Statement
+
+**Practical Questions**
+1. Write a function `squareOfNumber(n)` that returns the square of the given number. Call it with `9` and print the returned value.  
+2. Create a function `isAdult(age)` that returns `true` if age is 18 or above, otherwise returns `false`. Test it with `17` and `20`.  
+3. Write a function `getFullName(firstName, lastName)` that returns the full name. Call it with `"Rohit"` and `"Sharma"` and print the result.
+
+**Theory Questions**
+
+4. What does a function return if there is no `return` statement inside it?  
+5. Why do we use the `return` statement in a function instead of just using `console.log()` inside the function? Explain in 2–3 lines.
+
+---
+
+  // ====================================================================================================================
+  Answers:=
+1.
+
 
 
 
