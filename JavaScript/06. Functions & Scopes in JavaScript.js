@@ -477,7 +477,6 @@ Inner function accessing outer variables: Yes, an inner function can access vari
 Outer function accessing inner variables: No, the outer function cannot directly access variables declared inside the inner function.
 
 
-
   
 
 
