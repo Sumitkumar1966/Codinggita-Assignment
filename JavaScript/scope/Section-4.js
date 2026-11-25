@@ -66,6 +66,27 @@
 // ======================================================================================================================
 // Answers
 // 16.
-Success
+// Success
+// Variables declared using var inside an if block can be accessed outside that block.
+// 17
+// 2
+// The output is 2 because var does not create a separate variable inside the if block.
+// 18)
+// End
+// No, a standalone block does not create block scope for var.
+// 19)
+// Undefined
+// Yes, the var declaration is hoisted even when the condition is false. But the assignment does not happen.
+// 20)
+// if (true) {
+//     let secret = "Hidden";
+// }
+
+// console.log(secret);
+
+
+
+
+
 
 
