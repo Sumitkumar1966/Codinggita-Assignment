@@ -62,13 +62,31 @@
 
 // ================================================================================================================
 // Answrs:
-// 1.
+// 6.
 // I like Cricket
 // Cricket
-// 2.\
+// 7.\
 // English
 // gujarati
 // gujarati
-// 3.
+// 8.
+// no noerrror will produce as var marks is a global function and can be accessed everywhere
+// 9
+// Favorite color: Red
+// Red
+// ReferenceError: message is not defined
+// it causes error as message is not a global scope but a functional scope
+// 10
+var school="Sunrise School";
+function showschool(){
+    console.log(school);
+}
+function updateSchool(){
+    school="Green valley school"
+}
+showschool();
+updateSchool();
+console.log(school)
+
 
 
