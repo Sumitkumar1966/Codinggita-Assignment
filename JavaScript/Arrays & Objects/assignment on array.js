@@ -297,6 +297,60 @@ for (let i=0;i<marks.length;i++){
         }
     }
 }
+3.const matrix = [
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90]
+];
+
+console.log(matrix[0][2]);
+4.
+const matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+matrix[1][1] = 0;
+
+for (let i = 0; i < 3; i++) {
+    console.log(matrix[i]);
+}
+5.
+const matrix = [
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90]
+];
+
+console.log(matrix[0][2]);
+### ## # 12. Real-World Example
+```
+const marks = [
+    [85, 90, 92], // Jenil
+    [70, 75, 80], // Arjun
+    [88, 82, 89]  // Krishna
+];
+
+for (let i = 0; i < marks.length; i++) {
+    const studentMarks = marks[i];
+    const total = studentMarks[0] + studentMarks[1] + studentMarks[2];
+    const avg = total / 3;
+    console.log("Student " + (i + 1) + " average: " + avg);
+}
+```
+
+1. In the given marks example, what does `marks[i]` represent inside the loop?   
+2. Why do we use `marks.length` in the outer loop instead of hard-coding the number 3?  
+3. What will happen if one student has only 2 subject marks instead of 3? (Think about the calculation)
+
+---
+// =======================================================================================
+    1.
+marks[i] represents the complete marks array of one student.
+    2.
+
+
 
 
 
