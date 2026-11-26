@@ -111,23 +111,64 @@ Yes, in JavaScript, you can assign a value to an index that is outside the curre
 // length is a property, not a function.
 
   // ================================================================================================
-  ## # 6. Looping Through Arrays
-1. What are the two types of loops demonstrated in the notes for iterating through an array?
-2. In a standard `for` loop, what condition is typically used to ensure the loop stops before going out of bounds? (`i < ...`)
-3. In the `while` loop example, where is the increment step (`i++`) placed relative to the array access statement?
-4. Write a `for` loop structure that prints every element of an array named `students`.
-5. What happens if your loop condition incorrectly uses `<=` instead of `<` alongside `students.length` when accessing elements?
-6. Write a `for...of` loop that prints every element of an array named `subject`.
-7. What is the main advantage of using a `for...of` loop over a traditional `for` loop when you only need the values (and not the indices)?
-8. Given `const colors = ["Red", "Blue", "Green"];`, what will the following code output?
-   ```javascript
-   for (const color of colors) {
-       console.log(color, indexOf(color);
-   }
+//   ## # 6. Looping Through Arrays
+// 1. What are the two types of loops demonstrated in the notes for iterating through an array?
+// 2. In a standard `for` loop, what condition is typically used to ensure the loop stops before going out of bounds? (`i < ...`)
+// 3. In the `while` loop example, where is the increment step (`i++`) placed relative to the array access statement?
+// 4. Write a `for` loop structure that prints every element of an array named `students`.
+// 5. What happens if your loop condition incorrectly uses `<=` instead of `<` alongside `students.length` when accessing elements?
+// 6. Write a `for...of` loop that prints every element of an array named `subject`.
+// 7. What is the main advantage of using a `for...of` loop over a traditional `for` loop when you only need the values (and not the indices)?
+// 8. Given `const colors = ["Red", "Blue", "Green"];`, what will the following code output?
+//    ```javascript
+//    for (const color of colors) {
+//        console.log(color, indexOf(color);
+//    }
 
 ---
 // =========================================================================================================
 1.
+ // for loop , while loop, for...of loop
+ 2.
+ // arr.length
+ 3.
+ at the end after the console part
+ 4.
+ const students = ["Jenil", "Mahir", "Krishna", "Yashvi"];
+for (let i = 0; i < students.length; i++) {
+    console.log(students[i]);
+}
+5.
+it will give an error as the index of element is more than the arr element
+6.
+let subject = ["Maths", "Science", "English", "Computer"];
+
+for (let sub of subject) {
+    console.log(sub);
+}
+7.
+A traditional for loop requires an index variable i.
+We need to use arr[i] to access each element.
+A for...of loop directly gives us the values.
+8.
+gives an error because indexOf() is not written correctly. It should be called using the array name, like colors.indexOf(color).
+const colors = ["Red", "Blue", "Green"];
+
+for (const color of colors) {
+    console.log(color, colors.indexOf(color));
+}
+// =============================================================================================
+## # 7. Adding Elements to Arrays
+1. Which method is used to add an element at the **end** of an array?
+2. Which method is used to add an element at the **beginning** of an array?
+3. Given `let nums = [1, 2, 3];`, write the code to add `4` at the end using the appropriate method. What will `console.log(nums);` show after that?
+4. Continuing from the previous question, write the code to add `0` at the beginning. What will the final array look like?
+5. True or False: `push()` and `unshift()` both modify the original array (they are mutating methods).
+---
+// ===================================================================================
+1.
+
+ 
 
 
 
