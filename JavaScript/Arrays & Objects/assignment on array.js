@@ -167,6 +167,148 @@ for (const color of colors) {
 ---
 // ===================================================================================
 1.
+push() method
+2.
+unshift() method
+3.
+let nums = [1, 2, 3];
+nums.push(4);
+console.log(nums)
+4.
+let nums = [1, 2, 3];
+nums.unshift(0);
+console.log(nums)
+5.
+True
+## # 8. Removing Elements
+1. Which method removes the **last** element of an array?
+2. Which method removes the **first** element of an array?
+3. Given `let nums = [100, 200, 300, 400, 500];`, what does `nums.pop();` do, and what will the array contain after calling it?
+4. After the previous operation, what does `nums.shift();` do, and what will the remaining array contain?
+5. Do `pop()` and `shift()` return the removed element, or do they only modify the array?
+---
+// ====================================================================================================
+1.
+pop() method
+2.
+shift() method
+3.
+both modify the array and also return the removed elemnt
+let nums = [10, 20, 30];
+
+let a = nums.pop();
+let b = nums.shift();
+
+console.log(a); //30
+console.log(b);  //10
+console.log(nums);  //20
+4.
+remove the first eleemnt of the nums
+5.
+both modify the array and also return the removed elemnt
+## # 9. Searching in Arrays
+1. What does the `indexOf()` method return when the searched value is found in the array?
+2. What does `indexOf()` return when the value is **not** present in the array?
+3. Given `const names = ["Jenil", "Mahir", "Arjun"];`, what does `console.log(names.indexOf("Mahir"));` output?
+4. For the same array, what does `console.log(names.indexOf("Krishna"));` output?
+5. Write a line of code that finds the index of `"Priyesha"` in an array named `students`.
+---\
+// ======================================================================================================
+1.
+It returns the index (position) of the searched element.
+    2.
+-1
+3.
+1
+4==>-1
+5.
+const students = ["Jenil", "Mahir", "Arjun","priyesha"];
+console.log(students.indexOf["Priyesha"]
+## # 10. Array with Different Data Types
+1. Can a JavaScript array store values of different data types (e.g., number, string, boolean, null) in the same array?
+2. Write the syntax to create an array named `data` that contains a number, a string, a boolean, and `null`.
+3. How can you check the data type of each element in such an array?
+4. Given `const data = [100, "Hello", true, null];`, what does `typeof data[0]` return?
+5. What does `typeof data[2]` return for the same array?
+---
+    // ===============================================================================================
+1.
+    Yes, JavaScript arrays can store values of different data types in the same array.
+    2.
+let data = [100, "Hello", true, null];
+3.
+const data = [100, "Hello", true, null];
+
+for (let i = 0; i < data.length; i++) {
+    console.log(typeof data[i]);
+}
+output
+number
+string
+boolean
+object
+4.
+number
+5.
+boolean
+## # 11. Array of Arrays (Matrix) – 2D Arrays  
+
+1. Create a 4×2 matrix and print **all elements of the second column**.  
+2. Given this matrix of student marks, print only the marks of the **third student**:  
+   ```javascript
+   const marks = [
+       [85, 90, 78],
+       [70, 75, 80],
+       [88, 82, 95],
+       [60, 65, 70]
+   ];
+   ```  
+3. Write code to find and print the **total number of elements** present in a 3×4 matrix.  
+4. Create a 3×3 matrix filled with numbers 1 to 9. Then update the **center element** (index `[1][1]`) to `0` and print the matrix.  
+5. Access and print the element that is present at the **first row and last column** of any 3×3 matrix you create.
+
+---
+// =======================================================================================================
+1.
+let matrix = [
+    [10, 20],
+    [30, 40],
+    [50, 60],
+    [70, 80]
+]
+for (let i=0;i<matrix.length;i++){
+    for (let j=0;j<matrix[i].length;j++){     
+        if(j==1){
+            console.log(matrix[i][j])
+        }       
+    }
+}
+2.
+ const marks = [
+       [85, 90, 78],
+       [70, 75, 80],
+       [88, 82, 95],
+       [60, 65, 70]
+];
+for (let i=0;i<marks.length;i++){
+    for (let j=0;j<marks[i].length;j++){
+        if (j==2){
+            console.log((marks[i][j]))
+        }
+    }
+}
+
+
+
+
+
+
+
+
+    
+
+
+
 
  
 
