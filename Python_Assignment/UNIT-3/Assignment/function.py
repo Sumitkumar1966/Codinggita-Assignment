@@ -1051,7 +1051,51 @@ print(result)
 
        # Q19
 
+def display_primes(start, end):
+    count=0
+    for number in range(start,end+1):
+        if number>1:
+            is_prime=True
 
+            for i in range(2,number):
+                if number%i==0:
+                    is_prime=False
+                    break
+            if is_prime:
+                print(number,end=" ")
+                count+=1
+    print("Total Prime numbers:",count)            
+
+display_primes(10,30)
+
+# Q20
+
+def display_student_report(name, mark1, mark2, mark3):
+    total = mark1 + mark2 + mark3
+    percentage = total / 3
+
+    if mark1 >= 40 and mark2 >= 40 and mark3 >= 40:
+        result = "PASS"
+    else:
+        result = "FAIL"
+
+    print("=" * 32)
+    print("         STUDENT REPORT")
+    print("=" * 32)
+    print("Name       :", name)
+    print("Subject 1  :", mark1)
+    print("Subject 2  :", mark2)
+    print("Subject 3  :", mark3)
+    print("-" * 32)
+    print("Total      :", total, "/ 300")
+    print("Percentage : {:.2f}%".format(percentage))
+    print("Result     :", result)
+    print("=" * 32)
+
+
+display_student_report("Rahul", 75, 80, 65)
+display_student_report("Priya", 90, 85, 95)
+display_student_report("Amit", 35, 60, 70)
 
                         
 
