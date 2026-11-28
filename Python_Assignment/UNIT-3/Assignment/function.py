@@ -704,8 +704,356 @@ print(salary_1)
 print(salary_2)
 print(salary_3)
 print(salary_4)
+
+## Section D — Applying Functions with Previously Learned Topics
+
+### Q14. Number Digit Counter
+
+**Task**
+
+Create a function named `count_digits(number)` that returns the total number of digits in the given integer.
+
+Do not convert the number into a string. Use arithmetic operators and a loop.
+
+**Sample**
+
+```python
+count = count_digits(4826)
+print("Total digits:", count)
+```
+
+**Expected output**
+
+```text
+Total digits: 4
+```
+
+**Test cases**
+
+| Input | Expected digit count |
+|---:|---:|
+| 7 | 1 |
+| 4826 | 4 |
+| 90000 | 5 |
+| 0 | 1 |
+
+---
+
+### Q15. Sum of Digits
+
+**Task**
+
+Create a function named `sum_of_digits(number)` that returns the sum of all digits of the given number.
+
+Use a loop and the `%` and `//` operators.
+
+**Sample**
+
+```python
+result = sum_of_digits(482)
+print("Sum of digits:", result)
+```
+
+**Expected output**
+
+```text
+Sum of digits: 14
+```
+
+**Test cases**
+
+| Input | Expected sum |
+|---:|---:|
+| 123 | 6 |
+| 482 | 14 |
+| 9005 | 14 |
+| 7 | 7 |
+
+---
+
+### Q16. Reverse a Number
+
+**Task**
+
+Create a function named `reverse_number(number)` that returns the number formed by reversing its digits.
+
+Use a loop and arithmetic operators. Do not convert the number into a string.
+
+**Sample**
+
+```python
+result = reverse_number(4826)
+print("Reversed number:", result)
+```
+
+**Expected output**
+
+```text
+Reversed number: 6284
+```
+
+**Test cases**
+
+| Input | Expected result |
+|---:|---:|
+| 123 | 321 |
+| 4826 | 6284 |
+| 900 | 9 |
+| 7 | 7 |
+
+---
+
+### Q17. Palindrome Number Checker
+
+**Task**
+
+Create a function named `is_palindrome(number)` that returns `True` if the given number reads the same forward and backward; otherwise, it returns `False`.
+
+Use arithmetic operators and a loop. Do not convert the number into a string.
+
+Outside the function, display a suitable message based on the returned value.
+
+**Sample**
+
+```python
+result = is_palindrome(121)
+print(result)
+```
+
+**Expected output**
+
+```text
+True
+```
+
+**Test cases**
+
+| Input | Expected result |
+|---:|---|
+| 121 | True |
+| 1331 | True |
+| 123 | False |
+| 7 | True |
+
+---
+
+### Q18. Prime Number Checker
+
+**Task**
+
+Create a function named `is_prime(number)` that returns `True` if the number is prime; otherwise, it returns `False`.
+
+A prime number is greater than 1 and has exactly two factors: 1 and itself.
+
+Display a suitable message outside the function.
+
+**Sample**
+
+```python
+result = is_prime(17)
+print(result)
+```
+
+**Expected output**
+
+```text
+True
+```
+
+**Test cases**
+
+| Input | Expected result |
+|---:|---|
+| 2 | True |
+| 17 | True |
+| 21 | False |
+| 1 | False |
+| 0 | False |
+
+---
+
+### Q19. Display Prime Numbers in a Range
+
+**Task**
+
+Create a function named:
+
+```python
+display_primes(start, end)
+```
+
+The function should:
+
+1. Check every number from `start` to `end`, including both limits.
+2. Identify prime numbers.
+3. Display all prime numbers found.
+4. Count and display the total number of prime numbers.
+
+You may write the prime-checking logic directly in this function. Do not use lists.
+
+**Sample function call**
+
+```python
+display_primes(10, 30)
+```
+
+**Expected output**
+
+```text
+Prime numbers: 11 13 17 19 23 29
+Total prime numbers: 6
+```
+
+**Test cases**
+
+| Start | End | Expected prime numbers | Count |
+|---:|---:|---|---:|
+| 1 | 10 | 2, 3, 5, 7 | 4 |
+| 10 | 30 | 11, 13, 17, 19, 23, 29 | 6 |
+| 20 | 25 | 23 | 1 |
+| 14 | 16 | No prime numbers | 0 |
+
+---
+
+### Q20. Student Result Report
+
+**Task**
+
+Create a function named:
+
+```python
+display_student_report(name, mark_1, mark_2, mark_3)
+```
+
+The function should:
+
+1. Calculate the total marks.
+2. Calculate the percentage, assuming each subject is out of 100.
+3. Decide the result:
+   - Percentage greater than or equal to 40: Pass
+   - Percentage below 40: Fail
+4. Display the student's complete report.
+
+**Sample function call**
+
+```python
+display_student_report("Rahul", 75, 80, 65)
+```
+
+**Expected output**
+
+```text
+================================
+         STUDENT REPORT
+================================
+Name       : Rahul
+Subject 1  : 75
+Subject 2  : 80
+Subject 3  : 65
+--------------------------------
+Total      : 220 / 300
+Percentage : 73.33%
+Result     : PASS
+================================
+```
+
+Call the function for at least three students.
+
+**Test cases**
+
+| Name | Mark 1 | Mark 2 | Mark 3 | Expected result |
+|---|---:|---:|---:|---|
+| Rahul | 75 | 80 | 65 | Pass |
+| Priya | 35 | 45 | 40 | Pass |
+| Aman | 20 | 30 | 25 | Fail |
+| Neha | 100 | 100 | 100 | Pass |
+
+---
+
+**Submission:** Submit your Python code for all 20 questions by **27 November 2026**.
+# ===============================================================================================================
+
 # Q14
 
+def count_digits(n):
+    count=0
+    if n==0:
+        return 1
+    else:
+        while n>0:
+            digit=n%10
+            count+=1
+            n=n//10
+        return count
+        
+counts = count_digits(4826)
+print("Total digits:", counts)
+# Q15
+
+def count_digits(n):
+    sum=0
+    while n>0:
+        digit=n%10
+        sum+=digit
+        n=n//10
+    return sum
+        
+counts = count_digits(4826)
+print("Total digits:", counts)
+
+# Q16
+
+def count_digits(n):
+    reverse=0
+    while n>0:
+        digit=n%10
+        reverse=reverse*10+digit
+        n=n//10
+    return reverse
+        
+counts = count_digits(4826)
+print("Total digits:", counts)
+
+# Q17
+
+def is_palindrome(n):
+    reverse=0
+    tmp=n
+    while n>0:
+        digit=n%10
+        reverse=reverse*10+digit
+        n=n//10
+    
+    if reverse==tmp:
+        return True
+    else:
+        return False
+        
+result = is_palindrome(121)
+print(result)
+
+# Q18
+def is_prime(number):
+    if number<=1:
+        return False
+    else:
+        count=0
+        for i in range(1,number+1):
+            if number%i==0:
+                count+=1
+        if count>2:
+            return False
+        elif count==2:
+            return True
+result = is_prime(17)
+print(result)
+            
+
+       # Q19
+
+
+
+                        
 
 
 
